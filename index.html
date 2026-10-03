@@ -3,118 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EFAZ GAMING | Multi-Game Creator</title>
-<meta name="description" content="EFAZ GAMING — Valorant, Wuthering Waves, GTA and more.">
+<title>EFAZ GAMING — Official Gaming Hub</title>
+<meta name="description" content="EFAZ GAMING — gaming, clips, streams and more.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="grid-bg"></div>
+<div class="scanlines"></div>
+<div class="grid"></div>
 
-<header>
-<a class="brand" href="#home"><span>EFAZ</span> GAMING</a>
-<button class="menu" aria-label="Open menu">☰</button>
-<nav>
-<a href="#home">Home</a>
-<a href="#games">Games</a>
-<a href="#about">About</a>
-<a href="#socials">Socials</a>
-</nav>
+<header class="site-header">
+  <a class="logo" href="#home"><span>EFAZ</span> GAMING</a>
+  <button class="menu" aria-label="Open menu">☰</button>
+  <nav>
+    <a href="#home">HOME</a><a href="#games">GAMES</a><a href="#about">ABOUT</a><a href="#socials">SOCIALS</a>
+  </nav>
 </header>
 
 <main>
 <section id="home" class="hero">
-<div class="hero-copy">
-<p class="eyebrow">WELCOME TO THE ZONE</p>
-<h1>EFAZ<br><span>GAMING</span></h1>
-<p class="lead">One player. Many worlds. Endless gaming.</p>
-<p class="sub">Valorant • Wuthering Waves • GTA • and many more.</p>
-<div class="buttons">
-<a class="btn primary" href="#games">EXPLORE GAMES</a>
-<a class="btn ghost" href="#socials">FOLLOW ME</a>
-</div>
-</div>
-<div class="hero-mark">
-<div class="ring"></div>
-<div class="mark-text">E</div>
-<div class="mark-small">EFAZ<br>GAMING</div>
-</div>
+  <div class="hero-copy">
+    <div class="status"><i></i> ONLINE • GAMING CREATOR</div>
+    <p class="eyebrow">WELCOME TO MY WORLD</p>
+    <h1>EFAZ<br><span>GAMING</span></h1>
+    <p class="hero-title">ONE PLAYER. <b>MANY WORLDS.</b></p>
+    <p class="hero-sub">Valorant • Wuthering Waves • GTA • and many more.</p>
+    <div class="actions">
+      <a class="btn primary" href="#games">EXPLORE GAMES <b>↗</b></a>
+      <a class="btn outline" href="#socials">FOLLOW EFAZ <b>→</b></a>
+    </div>
+    <div class="stats"><div><strong>03+</strong><span>GAMES</span></div><div><strong>∞</strong><span>MEMORIES</span></div><div><strong>24/7</strong><span>GAMING</span></div></div>
+  </div>
+
+  <div class="portrait-wrap">
+    <div class="portrait-glow"></div>
+    <div class="portrait-frame"><img src="efaz-photo.jpg" alt="Efaz"></div>
+    <div class="portrait-label"><span>PLAYER</span><strong>EFAZ</strong></div>
+    <div class="corner c1"></div><div class="corner c2"></div><div class="corner c3"></div><div class="corner c4"></div>
+  </div>
 </section>
 
 <section id="games" class="section">
-<div class="section-head">
-<p class="eyebrow">CURRENTLY PLAYING</p>
-<h2>THE <span>GAMES</span></h2>
-</div>
-<div class="cards">
-<article class="card valorant">
-<img class="game-photo" src="https://www.washingtonpost.com/resizer/L-FezVuIJTTa89o_Wqt5HbWWnUs%3D/arc-anglerfish-washpost-prod-washpost/public/5RSLEPTG25GRZKEN6ITNF6R4MM.jpg" alt="VALORANT artwork">
-<div class="card-content"><span class="tag">FPS</span><h3>VALORANT</h3><p>Competitive tactical shooter.</p></div>
-</article>
-
-<article class="card wuwa">
-<img class="game-photo" src="https://cdn.gameleap.com/images/articles/art_w_45o2HeRx/art-img_f4Iwv8Th5/1x.webp" alt="Wuthering Waves artwork">
-<div class="card-content"><span class="tag">RPG</span><h3>WUTHERING WAVES</h3><p>Explore, fight and discover.</p></div>
-</article>
-
-<article class="card gta">
-<img class="game-photo" src="https://img.huffingtonpost.com/asset/5d02bf252400005117909416.jpeg?ops=scalefit_1440" alt="Grand Theft Auto V artwork">
-<div class="card-content"><span class="tag">OPEN WORLD</span><h3>GTA</h3><p>Chaos, cars and everything in between.</p></div>
-</article>
-
-<article class="card more">
-<div class="game-icon">+</div>
-<div><span class="tag">MORE</span><h3>COMING SOON</h3><p>More games will be added here.</p></div>
-</article>
-</div>
+  <div class="section-top"><div><p class="eyebrow">CURRENTLY PLAYING</p><h2>THE <span>GAMES</span></h2></div><p class="section-note">SELECT YOUR<br>WORLD →</p></div>
+  <div class="game-grid">
+    <article class="game-card"><div class="game-num">01</div><div class="game-art valorant"></div><div class="game-info"><small>FPS / COMPETITIVE</small><h3>VALORANT</h3><p>Competitive tactical shooter.</p></div></article>
+    <article class="game-card"><div class="game-num">02</div><div class="game-art wuwa"></div><div class="game-info"><small>RPG / OPEN WORLD</small><h3>WUTHERING WAVES</h3><p>Explore, fight and discover.</p></div></article>
+    <article class="game-card"><div class="game-num">03</div><div class="game-art gta"></div><div class="game-info"><small>OPEN WORLD</small><h3>GTA</h3><p>Chaos, cars and everything in between.</p></div></article>
+    <article class="game-card coming"><div class="game-num">04</div><div class="plus">+</div><div class="game-info"><small>MORE</small><h3>COMING SOON</h3><p>More games will be added.</p></div></article>
+  </div>
 </section>
 
 <section id="about" class="about section">
-<div>
-<p class="eyebrow">WHO IS EFAZ?</p>
-<h2>PLAY. <span>CREATE.</span> REPEAT.</h2>
-</div>
-<p>EFAZ GAMING is a personal gaming hub for clips, streams, gaming updates, achievements and everything happening across different games. This site is ready to grow with the channel.</p>
+  <div class="about-photo"><img src="efaz-photo.jpg" alt="Efaz gaming creator"><span>01 / EFAZ</span></div>
+  <div class="about-copy"><p class="eyebrow">WHO IS EFAZ?</p><h2>PLAY.<br><span>CREATE.</span><br>REPEAT.</h2><p>EFAZ GAMING is my personal gaming hub — a place for clips, streams, gaming updates, achievements and everything happening across the games I love.</p><a href="#socials" class="text-link">CONNECT WITH ME <b>↗</b></a></div>
 </section>
 
-<section id="socials" class="section socials">
-<div class="section-head">
-<p class="eyebrow">STAY CONNECTED</p>
-<h2>FOLLOW <span>EFAZ</span></h2>
-</div>
-<div class="social-grid">
-<a href="https://youtube.com/@efaz123-h5h?si=s19gViumEplDOBd8" target="_blank" rel="noopener noreferrer" class="social youtube">
-  <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8ZM9.6 15.9V8.1l6.6 3.9-6.6 3.9Z"/></svg></span>
-  <span><strong>YouTube</strong><small>@efaz123-h5h</small></span><b>↗</b>
-</a>
-<a href="https://www.facebook.com/share/19hkDodcZb/" target="_blank" rel="noopener noreferrer" class="social facebook">
-  <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M24 12.1C24 5.5 18.6.1 12 .1S0 5.5 0 12.1c0 6 4.4 11 10.1 11.9v-8.4H7.1v-3.5h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 1-2 1.9v2.3h3.4l-.5 3.5h-2.9V24C19.6 23.1 24 18.1 24 12.1Z"/></svg></span>
-  <span><strong>Facebook</strong><small>Follow Efaz</small></span><b>↗</b>
-</a>
-<a href="https://discord.gg/YcXfSS2XP" target="_blank" rel="noopener noreferrer" class="social discord">
-  <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M19.5 0h-15A4.5 4.5 0 0 0 0 4.5v15A4.5 4.5 0 0 0 4.5 24h15a4.5 4.5 0 0 0 4.5-4.5v-15A4.5 4.5 0 0 0 19.5 0ZM18 17.3c-1.3 1-2.8 1.5-4.4 1.7l-.9-1.2c.3-.1.7-.3 1-.5-2.9 1.4-6.3 1.4-9.2 0 .3.2.7.4 1 .5l-.9 1.2C3 18.8 1.5 18.3 0 17.3c.1-4.2.9-7.7 2.9-10.9 1.5-1.1 3.1-1.7 4.8-1.9l.6 1.1c1.8-.3 3.6-.3 5.4 0l.6-1.1c1.7.2 3.3.8 4.8 1.9 2 3.2 2.8 6.7 2.9 10.9ZM8.3 12.8c-.9 0-1.6-.8-1.6-1.8s.7-1.8 1.6-1.8 1.6.8 1.6 1.8-.7 1.8-1.6 1.8Zm7.4 0c-.9 0-1.6-.8-1.6-1.8s.7-1.8 1.6-1.8 1.6.8 1.6 1.8-.7 1.8-1.6 1.8Z"/></svg></span>
-  <span><strong>Discord</strong><small>Join the server</small></span><b>↗</b>
-</a>
-<a href="https://www.tiktok.com/@erfanul_efaz1?_r=1&_t=ZS-9AEYnXAh1Va" target="_blank" rel="noopener noreferrer" class="social tiktok">
-  <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M18.4 4.2A6.5 6.5 0 0 1 14.6 1h-3.4v14.1a2.5 2.5 0 1 1-2-2.4V9.2a6.1 6.1 0 1 0 5.4 6V8.1a10 10 0 0 0 5.9 1.9V6.6a6.5 6.5 0 0 1-2.1-2.4Z"/></svg></span>
-  <span><strong>TikTok</strong><small>@erfanul_efaz1</small></span><b>↗</b>
-</a>
-</div>
+<section id="socials" class="socials section">
+  <div class="section-top"><div><p class="eyebrow">STAY CONNECTED</p><h2>FOLLOW <span>EFAZ</span></h2></div><p class="section-note">JOIN THE<br>COMMUNITY →</p></div>
+  <div class="social-grid">
+    <a href="https://youtube.com/@efaz123-h5h?si=s19gViumEplDOBd8" target="_blank" rel="noopener" class="social"><span class="icon youtube">▶</span><span><strong>YouTube</strong><small>@efaz123-h5h</small></span><b>↗</b></a>
+    <a href="https://www.facebook.com/share/19hkDodcZb/" target="_blank" rel="noopener" class="social"><span class="icon facebook">f</span><span><strong>Facebook</strong><small>Follow Efaz</small></span><b>↗</b></a>
+    <a href="https://discord.gg/YcXfSS2XP" target="_blank" rel="noopener" class="social"><span class="icon discord">◉</span><span><strong>Discord</strong><small>Join the server</small></span><b>↗</b></a>
+    <a href="https://www.tiktok.com/@erfanul_efaz1?_r=1&_t=ZS-9AEYnXAh1Va" target="_blank" rel="noopener" class="social"><span class="icon tiktok">♪</span><span><strong>TikTok</strong><small>@erfanul_efaz1</small></span><b>↗</b></a>
+  </div>
 </section>
 </main>
 
-<footer>
-<strong>EFAZ GAMING</strong>
-<span>© 2026 • Built for gaming.</span>
-</footer>
-
+<footer><div class="logo"><span>EFAZ</span> GAMING</div><p>© 2026 • BUILT FOR GAMING.</p></footer>
 <script>
-const menu = document.querySelector('.menu');
-const nav = document.querySelector('nav');
-menu.addEventListener('click', () => nav.classList.toggle('open'));
-document.querySelectorAll('nav a').forEach(a => a.addEventListener('click', () => nav.classList.remove('open')));
+const menu=document.querySelector('.menu'),nav=document.querySelector('nav');
+menu.onclick=()=>nav.classList.toggle('open');
+document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
 </script>
 </body>
 </html>
