@@ -23,3 +23,21 @@ footer{padding:30px 10%;border-top:1px solid #222;display:flex;justify-content:s
 @keyframes spin{to{transform:rotate(360deg)}}
 @media(max-width:800px){header{padding:0 6%}.menu{display:block}nav{display:none;position:absolute;top:76px;left:0;right:0;background:#0b0b0b;padding:25px 7%;flex-direction:column;border-bottom:1px solid #222}.open{display:flex}.hero{padding:65px 7%;min-height:auto;flex-direction:column;align-items:flex-start}.hero-mark{width:250px;height:250px;align-self:center}.mark-text{font-size:120px}.cards{grid-template-columns:1fr 1fr}.about{grid-template-columns:1fr;gap:30px}.social-grid{grid-template-columns:1fr 1fr}.section{padding:80px 7%}footer{padding:25px 7%;flex-direction:column;gap:8px}}
 @media(max-width:500px){.cards,.social-grid{grid-template-columns:1fr}.hero-mark{display:none}.buttons{flex-wrap:wrap}h1{font-size:65px}}
+
+/* Gaming social cards */
+.social-grid{gap:14px}
+.social{position:relative;overflow:hidden;align-items:center;justify-content:flex-start;min-height:88px;padding:18px 17px;gap:13px;border:1px solid #252525;background:linear-gradient(135deg,#111 0%,#0b0b0b 100%);transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+.social:before{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 20%,rgba(255,24,56,.10),transparent 75%);transform:translateX(-110%);transition:.5s}
+.social:hover{transform:translateY(-5px);border-color:var(--red);box-shadow:0 12px 35px rgba(255,24,56,.13)}
+.social:hover:before{transform:translateX(110%)}
+.social-icon{width:42px;height:42px;min-width:42px;display:grid;place-items:center;border:1px solid #333;background:#171717;position:relative;z-index:1}
+.social-icon svg{width:21px;height:21px;fill:#fff}
+.social span:nth-child(2){display:flex;flex-direction:column;gap:5px;position:relative;z-index:1}
+.social strong{font:800 12px Orbitron,sans-serif;letter-spacing:1px;color:#fff}
+.social small{font:500 9px Inter,sans-serif;color:#777}
+.social>b{margin-left:auto;color:var(--red);font-size:18px;position:relative;z-index:1}
+.social.youtube:hover .social-icon{background:#ff0033;border-color:#ff0033}
+.social.facebook:hover .social-icon{background:#1877f2;border-color:#1877f2}
+.social.discord:hover .social-icon{background:#5865f2;border-color:#5865f2}
+.social.tiktok:hover .social-icon{background:#111;border-color:#fff}
+@media(max-width:800px){.social{min-height:82px}}
